@@ -6,6 +6,10 @@ to use my brain?! God forbid!".
 So I set to using my brain a little more to create this tool. It's not much,
 but maybe it'll make someone's life a little easier.
 
+Install:
+(set up gemcutter)
+gem install ListBrowser
+
 It can be used in irb, and really should be used there - when you call it on
 a tree structure, you'll get a menu with a list of choices on how you want to
 go through whatever structure you gave it.
