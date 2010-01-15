@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README.rdoc</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>README.rdoc</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>README.rdoc
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Fri Jan 15 18:43:10 -0500 2010</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+~~~~ <a href="../classes/ListBrowser.html">ListBrowser</a> README ~~~~
+</p>
+<p>
+I was working on a parser for a very specific tree structure, and was
+frustrated that there wasn&#8216;t a simple way to parse it in irb.
+&quot;What??&quot;, I thought. &quot;I have to use my brain?! God
+forbid!&quot;. So I set to using my brain a little more to create this
+tool. It&#8216;s not much, but maybe it&#8216;ll make someone&#8216;s life
+a little easier.
+</p>
+<p>
+It can be used in irb, and really should be used there - when you call it
+on a tree structure, you&#8216;ll get a menu with a list of choices on how
+you want to go through whatever structure you gave it.
+</p>
+<p>
+In my particular, special case, I would do something like this:
+</p>
+<p>
+require &#8216;sgf_parser&#8217; # For my tree structure require
+&#8216;list_browser&#8217; # For this.
+</p>
+<p>
+tree = SgfParser::Tree.new :filename =&gt; &quot;kogo.sgf&quot;
+</p>
+<p>
+<a href="../classes/ListBrowser.html#M000001">ListBrowser.new</a>
+tree.root, &#8216;parent&#8217;, &#8216;children&#8217;,
+&#8216;properties&#8216;
+</p>
+<p>
+# And follow the menu!
+</p>
+<pre>
+ In my particular case, I would not need to enter those strings, as they
+ just happen to be the names I chose for my tree structure, but they should
+ serve as a good enough example!
+</pre>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
